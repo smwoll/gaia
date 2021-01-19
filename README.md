@@ -1,4 +1,4 @@
-# Gaia Theme by Sky
+# Gaia Starter Theme
 
 This is a very basic starter theme based upon Automattic's Underscores.
 
