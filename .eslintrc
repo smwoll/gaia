@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "plugin:@wordpress/eslint-plugin/esnext",
+        "prettier"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "no-nested-ternary": "warn"
+    }
+    
+    
+}
