@@ -6,6 +6,8 @@ This theme uses Gulp and a webpack stream config to bundle sass and js from the 
 
 Get started by running npm install in the theme directory.
 
+Be sure to change the local development proxy URL in gaia/gulpfile.babel.js to the local dev server you use. For example, I use [Lando](https://docs.lando.dev/basics/), so mine looks like "projectname.lndo.site."
+
 ## Commands
 
 ### Developing
