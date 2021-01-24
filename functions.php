@@ -109,6 +109,9 @@ if (!function_exists('gaia_setup')):
 endif;
 add_action('after_setup_theme', 'gaia_setup');
 
+// Add support for responsive embedded content.
+add_theme_support('responsive-embeds');
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
