@@ -5,6 +5,13 @@
   }
 }
 
+// hide toggle on desktop
+@include media('>small') {
+  .menu-toggle {
+    display: none;
+  }
+}
+
 // set the media query and include all styles for mobile menu
 
 @include media('<=small') {
