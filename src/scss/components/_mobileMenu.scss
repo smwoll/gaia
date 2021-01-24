@@ -13,11 +13,19 @@
     position: relative;
   }
   // target default WP menu container
+  .main-navigation {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   .menu-primary-menu-container {
+    border: 10px $menu-boder-color solid;
+    box-sizing: border-box;
     visibility: hidden;
     width: 100%;
+    overflow-x: hidden;
     height: 100vh;
-    background-color: $primary-color;
+    background: $primary-color;
     position: absolute;
     top: 0;
     left: 0;
