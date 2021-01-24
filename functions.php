@@ -51,10 +51,11 @@ if (!function_exists('gaia_setup')):
          */
         add_theme_support('post-thumbnails');
 
-        // This theme uses wp_nav_menu() in one location.
+        // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(
             array(
                 'menu-1' => esc_html__('Primary', 'gaia'),
+                'footer' => __('Footer Navigation', 'gaia'),
             )
         );
 
@@ -130,9 +131,9 @@ function gaia_widgets_init()
 {
     register_sidebar(
         array(
-            'name' => esc_html__('Sidebar', 'gaia'),
+            'name' => __('Footer', 'gaia'),
             'id' => 'sidebar-1',
-            'description' => esc_html__('Add widgets here.', 'gaia'),
+            'description' => __('Add widgets here to appear in your footer.', 'gaia'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<h2 class="widget-title">',
@@ -143,7 +144,7 @@ function gaia_widgets_init()
 add_action('widgets_init', 'gaia_widgets_init');
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue scripts and styles. Scripts should be bundled and imported via the single bundle.js file.
  */
 function gaia_scripts()
 {
@@ -151,8 +152,6 @@ function gaia_scripts()
     wp_style_add_data('gaia-style', 'rtl', 'replace');
 
     wp_enqueue_script('_gaia-scripts', get_template_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true);
-
-    wp_enqueue_script('gaia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), GAIA_VERSION, true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');

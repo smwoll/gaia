@@ -66,5 +66,7 @@
     "start": "gulp",
     "build": "gulp build --prod"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

@@ -104,7 +104,7 @@ export const watchForChanges = () => {
 const server = browserSync.create();
 export const serve = (done) => {
   server.init({
-    proxy: 'http://firestarter.lndo.site', // put your local website link here
+    proxy: 'http://themedev.lndo.site', // put your local website link here
   });
   done();
 };

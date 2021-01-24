@@ -11,16 +11,13 @@
 
 ?>
 
-<footer id="colophon" class="site-footer">
-    <div class="site-info">
+</div><!-- #content -->
 
-
-        <?php
-/* translators: 1: Theme name, 2: Theme author. */
-printf(esc_html__('Theme: %1$s by %2$s.', 'gaia'), 'Gaia', 'Sky');
-?>
-    </div><!-- .site-info -->
+<footer id="colophon" class="site-footer default-max-width" role="contentinfo"
+    aria-label="<?php esc_attr_e('Footer', 'gaia');?>">
+    <?php get_template_part('template-parts/footer/footer-content');?>
 </footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer();?>
