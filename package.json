@@ -67,6 +67,7 @@
     "build": "gulp build --prod"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.5.1"
   }
 }

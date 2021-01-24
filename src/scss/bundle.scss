@@ -1,7 +1,25 @@
+// import base
 @import 'base/_normalize';
+
+// import AOS sass
+@import '../../node_modules/aos/src/sass/aos.scss';
 
 $primary-color: beige;
 
 body {
   background-color: $primary-color;
+}
+
+// testing styles
+
+.test-section {
+  background-color: aquamarine;
+  height: 40vh;
+  display: grid;
+  margin: 1em 0;
+  place-items: center;
+  p {
+    font-size: 3em;
+    color: red;
+  }
 }
