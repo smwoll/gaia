@@ -46,14 +46,20 @@ $gaia_description = get_bloginfo('description', 'display');
 if ($gaia_description || is_customize_preview()):
 ?>
                 <p class="site-description">
-                    <?php echo $gaia_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped       ?>
+                    <?php echo $gaia_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped         ?>
                 </p>
                 <?php endif;?>
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu"
-                    aria-expanded="false"><?php esc_html_e('Menu', 'gaia');?></button>
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">
+                        <?php esc_html_e('Menu', 'gaia');?></button>
+                </span>
+
                 <?php
 wp_nav_menu(
     array(
