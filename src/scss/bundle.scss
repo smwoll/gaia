@@ -54,14 +54,17 @@
 
 // imports
 
-// vendor - stuff from someone else
-// custom breakpoints has the breakpoints changed from default to small, medium, large
-@import 'vendor/include-media';
-@import 'vendor/custom-breakpoints';
-
 // import base
 @import 'base/_normalize';
 
+// custom breakpoints has the breakpoints changed from default to small, medium, large
+@import 'base/include-media';
+@import 'base/custom-breakpoints';
+
+// components
+@import 'components/mobileMenu';
+
+//vendors
 // import AOS sass
 @import '../../node_modules/aos/src/sass/aos.scss';
 

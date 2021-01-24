@@ -1,25 +1,24 @@
-const btnHamburger = document.querySelector('.menu-toggle');
+const toggle = document.querySelector('.menu-toggle');
 const html = document.querySelector('html');
 const menu = document.querySelector('.menu');
-// const overlay = document.querySelector('.overlay');
-const fadeElems = document.querySelectorAll('.has-fade');
+const menuContainer = document.querySelector(
+  '.menu-primary-menu-container',
+);
 
-btnHamburger.addEventListener('click', function () {
+toggle.addEventListener('click', function () {
   if (menu.classList.contains('open')) {
     // Close Hamburger Menu
     html.classList.remove('noscroll');
+    html.classList.remove('menu-open');
     menu.classList.remove('open');
-    fadeElems.forEach(function (element) {
-      element.classList.remove('fade-in');
-      element.classList.add('fade-out');
-    });
+    menuContainer.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
   } else {
     // Open Hamburger Menu
     html.classList.add('noscroll');
+    html.classList.add('menu-open');
     menu.classList.add('open');
-    fadeElems.forEach(function (element) {
-      element.classList.remove('fade-out');
-      element.classList.add('fade-in');
-    });
+    menuContainer.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
   }
 });

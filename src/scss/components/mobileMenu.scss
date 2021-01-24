@@ -1,0 +1,24 @@
+// lock scrolling when menu is open
+.noscroll {
+  body {
+    overflow: hidden;
+  }
+}
+
+.menu-toggle {
+  z-index: 99999;
+  position: relative;
+  @include media('>small') {
+    display: none;
+  }
+}
+
+.menu {
+  visibility: hidden;
+  @include media('>small') {
+    visibility: visible;
+  }
+  &.open {
+    visibility: visible;
+  }
+}
