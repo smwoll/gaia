@@ -59,6 +59,7 @@
 
 // import base
 @import 'base/_normalize';
+@import 'base/_screen-reader';
 
 // custom breakpoints has the breakpoints changed from default to small, medium, large
 @import 'base/include-media';
