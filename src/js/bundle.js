@@ -2,7 +2,7 @@
 
 import './components/hello-world';
 
-// import './components/mobileMenu';
+import './components/mobileMenu';
 
 // Import AOS for entry animations if you so desire.
 import './components/aosImport';
