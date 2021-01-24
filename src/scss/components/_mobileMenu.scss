@@ -53,7 +53,7 @@
 
   .menu {
     visibility: hidden;
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition: 0.3s;
     &.open {
       visibility: visible;
