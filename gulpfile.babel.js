@@ -109,7 +109,7 @@ export const serve = (done) => {
   done();
 };
 export const reload = (done) => {
-  server.reload();
+  server.reload({ stream: true });
   done();
 };
 
