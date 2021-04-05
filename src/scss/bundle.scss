@@ -72,10 +72,8 @@
 // import AOS sass
 @import '../../node_modules/aos/src/sass/aos.scss';
 
-$primary-color: beige;
-
 body {
-  background-color: $primary-color;
+  background-color: blue;
 }
 
 // testing styles
@@ -90,4 +88,8 @@ body {
     font-size: 3em;
     color: red;
   }
+}
+
+.entry-title {
+  font-size: 6em;
 }
